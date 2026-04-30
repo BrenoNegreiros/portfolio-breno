@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #1e293b;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+#sobre {
+    padding: 40px;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre-container img {
+    border-radius: 50%;
+}
+
+#habilidades {
+    padding: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background: #38bdf8;
+}
+
+#contato {
+    padding: 40px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+}
+
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+}
+
+.sobre-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* deixa redonda */
+    object-fit: cover;
+}
